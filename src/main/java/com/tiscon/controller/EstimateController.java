@@ -76,6 +76,7 @@ public class EstimateController {
      * @return 遷移先
      */
     @PostMapping(value = "submit", params = "confirm")
+
     String confirm(@Validated UserOrderForm userOrderForm, BindingResult result, Model model) {
 
         if (result.hasErrors()) {      //0127_1557 tanaka
@@ -87,6 +88,7 @@ public class EstimateController {
 
         model.addAttribute("prefectures", estimateDAO.getAllPrefectures());
         model.addAttribute("userOrderForm", userOrderForm);
+        //model.addAttribute("price", price);
         return "confirm";
     }
 
