@@ -76,19 +76,21 @@ public class EstimateController {
      * @return 遷移先
      */
     @PostMapping(value = "submit", params = "confirm")
-
     String confirm(@Validated UserOrderForm userOrderForm, BindingResult result, Model model) {
 
         if (result.hasErrors()) {      //0127_1557 tanaka
-
             model.addAttribute("prefectures", estimateDAO.getAllPrefectures());
             model.addAttribute("userOrderForm", userOrderForm);
             return "input";
         }
 
+        UserOrderDto dto = new UserOrderDto();
+        BeanUtils.copyProperties(userOrderForm, dto);
+        Integer price = estimateService.getPrice(dto);
+
         model.addAttribute("prefectures", estimateDAO.getAllPrefectures());
         model.addAttribute("userOrderForm", userOrderForm);
-        //model.addAttribute("price", price);
+        model.addAttribute("price", price);
         return "confirm";
     }
 
@@ -124,7 +126,7 @@ public class EstimateController {
      * 概算見積もり画面に遷移する。
      *
      * @param userOrderForm 顧客が入力した見積もり依頼情報
-     //* @param result        精査結果
+    //* @param result        精査結果
      * @param model         遷移先に連携するデータ
      * @return 遷移先
      */
