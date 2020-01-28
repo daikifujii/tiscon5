@@ -26,6 +26,10 @@ body {
     border-radius: 10px;/*角の丸み*/
 }
 
+#errorMessage{
+    color: red;
+}
+
 .jumbotron {
     background-repeat: no-repeat;
     background-position: calc(60%) calc(70%);
