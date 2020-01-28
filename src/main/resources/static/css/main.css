@@ -6,17 +6,21 @@ body {
     margin: 0;
 }
 
-#outputmoney{
-    font-family: 'Exo', sans-serif;
-    background: #FBC0AF;
+#outputmoney{  //daiki
+    padding: 10px;
+    margin: 10px;
+    font-size: 50px;
+    //background: #FBC0AF;
     border-color: #FBC0AF;
 }
 
-.box{
-    padding: 0.5em 1em;
-    margin: 2em 0;
+.box{    //daiki
+    //padding: 0.4em 1em; //本来0.5em
+    padding: 40px 10px;
+    //margin: 2em 0;
+    margin: 20px 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    //color: #6091d3;/*文字色*/
     background: #FFF;
     border: solid 3px #6091d3;/*線*/
     border-radius: 10px;/*角の丸み*/
