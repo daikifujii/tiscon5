@@ -62,7 +62,6 @@
           <label for="box">段ボールの個数</label>
           <!-- <input type="text" id="box" name="box" th:field="*{box}" class="form-control" value="10"/> -->
           <select id="box" name="box" class="form-control" th:field="*{box}">
-            <option th:value="ture" th:text="選択してください">選択してください</option>
             <option th:value="0" th:text="0">0</option>
             <option th:value="10" th:text="10（一人暮らし標準）">10（一人暮らし標準）</option>
             <option th:value="20" th:text="20（二人暮らし標準）">20（二人暮らし標準）</option>
@@ -74,7 +73,6 @@
           <label for="bed">ベッドの個数</label>
           <!-- <input type="text" id="bed" name="bed" th:field="*{bed}" class="form-control" value="3"/>-->
           <select id="bed" name="bed" class="form-control" th:field="*{bed}">
-            <option th:value="0" th:text="選択してください">選択してください</option>
             <option th:value="0" th:text="0">0</option>
             <option th:value="1" th:text="1">1</option>
             <option th:value="2" th:text="2">2</option>
@@ -86,7 +84,6 @@
           <label for="bicycle">自転車の個数</label>
           <!--  <input type="text" id="bicycle" name="bicycle" th:field="*{bicycle}" class="form-control" value="1"/>-->
           <select id="bicycle" name="bicycle" class="form-control" th:field="*{bicycle}">
-            <option th:value="0" th:text="選択してください">選択してください</option>
             <option th:value="0" th:text="0">0</option>
             <option th:value="1" th:text="1">1</option>
             <option th:value="2" th:text="2">2</option>
@@ -97,7 +94,6 @@
         <div class="form-group">
           <label for="washingMachine"><洗濯機の個></洗濯機の個>数</label>
           <select id="washingMachine" name="washingMachine" class="form-control" th:field="*{washingMachine}">
-            <option th:value="0" th:text="選択してください">選択してください</option>
             <option th:value="0" th:text="0">0</option>
             <option th:value="1" th:text="1">1</option>
             <option th:value="2" th:text="2">2</option>
