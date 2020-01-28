@@ -20,6 +20,7 @@
           <h2>概算お見積り結果は<span th:text="${price}" id="outputmoney"></span>円です。</h2>
         </div>
     </div>
+
     <h1>お見積り情報確認</h1>
     <ul th:if="${#fields.hasErrors('all')}">
       <li th:each="err : ${#fields.errors('all')}" th:text="${err}"></li>

@@ -71,6 +71,7 @@ public class EstimateController {
      * 確認画面に遷移する。
      *
      * @param userOrderForm 顧客が入力した見積もり依頼情報
+     * @param result        精査結果
      * @param model         遷移先に連携するデータ
      * @return 遷移先
      */
@@ -129,7 +130,7 @@ public class EstimateController {
      * 概算見積もり画面に遷移する。
      *
      * @param userOrderForm 顧客が入力した見積もり依頼情報
-     * @param result        精査結果
+    //* @param result        精査結果
      * @param model         遷移先に連携するデータ
      * @return 遷移先
      */

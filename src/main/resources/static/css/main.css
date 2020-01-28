@@ -33,12 +33,13 @@ body {
 }
 
 .btn-primary {
-    background: #FBC0AF;
-    border-color: #FBC0AF;
+    background: #FF6633;       //tanaka1033
+    border-color: #FF6633;
 }
 
 .btn-top {
-    width: 30%;
+    width: 50%;     //tanaka1033
+    //height: 15%;
 }
 
 .ui.main.container {
