@@ -22,7 +22,8 @@ body {
 }
 
 .btn-top {
-    width: 30%;
+    width: 50%;     //tanaka1033
+    //height: 15%;
 }
 
 .ui.main.container {
